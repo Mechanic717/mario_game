@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+
+}
+.mario{
+    background-image: url(mario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 135px;
+    height: 170px;
+    position: absolute;
+    bottom:97px;
+    left: 52px;
+}
+.obstacle{
+    background-image: url(dragon.png);
+    background-size: cover;
+    width: 174px;
+    height: 120px;
+    position: absolute;
+    bottom: 94px;
+    left: 44vw;
+}
+.gameOver{
+    position: relative;
+    top:63px;
+    font-size: 53px;
+    text-align: center;
+    visibility: hidden;
+    font-family: 'sans-serif';
+
+
+}
+#scoreCont{
+    position: absolute;
+    top: 31px;
+    color: white;
+    font-family: 'sans-serif';
+    left: 23px;
+    top: 23px;
+    border: 2px solid black;
+    padding:10px ;
+    text-align: center;
+    width: 112px;
+}
+.animateMario{
+    animation: mario 0.6s linear;
+
+}
+@keyframes mario{
+    0%{
+        bottom: 0;
+
+    }
+    50%{
+        bottom: 550px;
+
+    }
+    100%{
+        bottom: 0;
+
+    }
+}
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
+.godown{
+    position: absolute;
+    bottom: -200px;
+}

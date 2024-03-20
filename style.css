@@ -22,7 +22,7 @@ body{
     width: 135px;
     height: 170px;
     position: absolute;
-    bottom:97px;
+    bottom:77px;
     left: 52px;
 }
 .obstacle{
@@ -31,7 +31,7 @@ body{
     width: 174px;
     height: 120px;
     position: absolute;
-    bottom: 94px;
+    bottom: 74px;
     left: 44vw;
 }
 .gameOver{
